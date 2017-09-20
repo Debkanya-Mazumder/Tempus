@@ -30,18 +30,19 @@
         android:layout_centerHorizontal="true"
         />
 
-    <LogoIcon
-        android:id="@+id/logoIcon"
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="300px"
         android:layout_height="300px"
-        android:layout_centerHorizontal="true"
-        />
+        android:src="@drawable/logo_tempus"/>
+
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:id="@+id/imageView" />
 
-    <TextView2
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
