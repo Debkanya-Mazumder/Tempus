@@ -8,4 +8,5 @@ public class TaskContract {
 
 
     public static String DBNAME = "com.nutricioapp.debkanya.tempus.db";
+    //
 }
