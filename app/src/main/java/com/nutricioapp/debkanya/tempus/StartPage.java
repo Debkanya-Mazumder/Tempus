@@ -22,7 +22,13 @@ public class StartPage extends AppCompatActivity {
 
         btncalender.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent startCalendar = new Intent(getApplicationContext(), Calendar.class);
+                Intent startCalendar = new Intent(getApplicationContext(), CalendarActivity.class);
+                startActivity(startCalendar);
+            }
+        });
+        btnlists.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent startCalendar = new Intent(getApplicationContext(), ListActivity.class);
                 startActivity(startCalendar);
             }
         });
