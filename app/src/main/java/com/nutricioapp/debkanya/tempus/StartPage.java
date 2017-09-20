@@ -26,6 +26,12 @@ public class StartPage extends AppCompatActivity {
                 startActivity(startCalendar);
             }
         });
+        btnlists.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent startCalendar = new Intent(getApplicationContext(), ListActivity.class);
+                startActivity(startCalendar);
+            }
+        });
 
 
     }
