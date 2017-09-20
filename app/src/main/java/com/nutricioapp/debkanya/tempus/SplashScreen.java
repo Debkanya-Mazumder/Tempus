@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class SplashScreeen extends AppCompatActivity
+public class SplashScreen extends AppCompatActivity
 {
     // Splash screen timer
     private static int SPLASHSCREEN_TIME_OUT = 4500;
@@ -14,7 +14,7 @@ public class SplashScreeen extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screeen);
+        setContentView(R.layout.activity_splash_screen);
 
         // Introduce a handler to implement a thread to execute the splash screen
         new Handler().postDelayed(new Runnable()
@@ -24,11 +24,9 @@ public class SplashScreeen extends AppCompatActivity
             {
                 // This method will be executed once the timer is over
                 // Start your app main activity
-                Intent i = new Intent(SplashScreeen.this, StartPage.class);
-                startActivity(i);
-
-                // close this activity
-                finish();
+                Intent mainIntent = new Intent(SplashScreen.this,StartPage.class);
+                SplashScreen.this.startActivity(mainIntent);
+                SplashScreen.this.finish();
             }
         }, SPLASHSCREEN_TIME_OUT);
     }
