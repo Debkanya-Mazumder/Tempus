@@ -9,7 +9,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
         <Button
             android:id="@+id/btn_startpg_calendar"
@@ -66,12 +68,11 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/Welcome logo"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
+            android:id="@+id/logo_home_page"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
             android:layout_above="@+id/btn_startpg_calendar"
-            android:layout_alignLeft="@+id/btn_startpg_calendar"
-            android:layout_alignStart="@+id/btn_startpg_calendar"
+            android:layout_centerHorizontal="true"
             app:srcCompat="@drawable/tutorial" />
 
     </RelativeLayout>

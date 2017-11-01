@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nutricioapp.debkanya.tempus.TrackUser">
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <Button
+                    android:id="@+id/weekly_expenses"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/editText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:text="Your Weekly Expenses" />
+
+                <Button
+                    android:id="@+id/fixed_expenses"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/weekly_expenses"
+                    android:layout_alignStart="@+id/weekly_expenses"
+                    android:layout_below="@+id/weekly_expenses"
+                    android:layout_marginTop="18dp"
+                    android:text="Your Fixed Expenses" />
+
+                <Button
+                    android:id="@+id/liabilities"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/fixed_expenses"
+                    android:layout_alignStart="@+id/fixed_expenses"
+                    android:layout_below="@+id/fixed_expenses"
+                    android:layout_marginTop="19dp"
+                    android:text="Your Liabilities" />
+
+                <Button
+                    android:id="@+id/time_tracker"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/liabilities"
+                    android:layout_alignStart="@+id/liabilities"
+                    android:layout_below="@+id/liabilities"
+                    android:layout_marginTop="21dp"
+                    android:text="Your Time Tracker" />
+
+                <Button
+                    android:id="@+id/project_tracking_current"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/project_tracking_future"
+                    android:layout_alignStart="@+id/project_tracking_future"
+                    android:layout_below="@+id/time_tracker"
+                    android:layout_marginTop="19dp"
+                    android:text="Your Project Tracker (Active)" />
+
+                <Button
+                    android:id="@+id/project_tracking_future"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/project_tracking_current"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:text="Your Project Tracker (Future)" />
+
+                <Button
+                    android:id="@+id/add_more"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_alignLeft="@+id/time_tracker"
+                    android:layout_alignStart="@+id/time_tracker"
+                    android:layout_below="@+id/project_tracking_future"
+                    android:layout_marginTop="11dp"
+                    android:text="Add More..." />
+
+            </RelativeLayout>
+
+        </ScrollView>
+</android.support.constraint.ConstraintLayout>

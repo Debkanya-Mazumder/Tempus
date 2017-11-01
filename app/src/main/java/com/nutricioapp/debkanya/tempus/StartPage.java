@@ -24,24 +24,40 @@ public class StartPage extends AppCompatActivity {
         btnquit = (Button)findViewById(R.id.btn_startpg_quit);
 
         // Calander Functionality:
-        btncalender.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+        btncalender.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
                 Intent startCalendarButton = new Intent(getApplicationContext(), CalendarActivity.class);
                 startActivity(startCalendarButton);
             }
         });
 
         // Lists Functionality:
-        btnlists.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+        btnlists.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
                 Intent startListButton = new Intent(getApplicationContext(), Lists.class);
                 startActivity(startListButton);
             }
         });
 
+        // Track Functionality:
+        btntrack.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent startTrackButton = new Intent(getApplicationContext(), TrackUser.class);
+                startActivity(startTrackButton);
+            }
+        });
+
         // Exit Functionality:
-        btnquit.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+        btnquit.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
                 Intent startQuitButton = new Intent(Intent.ACTION_MAIN);
                 startQuitButton.addCategory(Intent.CATEGORY_HOME);
                 startQuitButton.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

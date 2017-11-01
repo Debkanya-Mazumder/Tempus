@@ -6,12 +6,42 @@
     android:layout_height="match_parent"
     tools:context="com.nutricioapp.debkanya.tempus.CalendarActivity">
 
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="381dp"
-        android:layout_height="304dp"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="0dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-    </CalendarView>
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="302dp"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="0dp">
+
+        </CalendarView>
+
+        <EditText
+            android:id="@+id/enterYourOwnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calendarView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp"
+            android:ems="10"
+            android:inputType="date"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="347dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calendarView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:text="Please Enter Your Own Date"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="315dp" />
+    </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

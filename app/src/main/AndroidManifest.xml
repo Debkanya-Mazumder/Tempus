@@ -27,6 +27,7 @@
         </activity>
         <activity android:name=".CalendarActivity" />
         <activity android:name=".Lists" />
+        <activity android:name=".TrackUser"></activity>
     </application>
 
 </manifest>
