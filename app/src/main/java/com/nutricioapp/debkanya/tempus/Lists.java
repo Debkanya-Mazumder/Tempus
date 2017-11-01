@@ -1,6 +1,5 @@
 package com.nutricioapp.debkanya.tempus;
 
-
 //written by Debkanya Mazumder (dmazum2@uic.edu)
 import android.content.ContentValues;
 import android.content.DialogInterface;
@@ -20,9 +19,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class ListActivity extends AppCompatActivity {
+public class Lists extends AppCompatActivity {
 
-    private static final String TAG = "ListActivity";
+    private static final String TAG = "Lists";
     private TaskDbHelper mHelper;
     private ArrayAdapter<String> mAdapter;
     private ListView mTaskListView;
@@ -46,7 +45,6 @@ public class ListActivity extends AppCompatActivity {
         }
         cursor.close();
         db.close();
-
         updateUI();
     }
 

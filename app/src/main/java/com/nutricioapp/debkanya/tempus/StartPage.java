@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class StartPage extends AppCompatActivity {
 
-    Button btncalender, btnlists, btntrack;
+    Button btncalender, btnlists, btntrack, btnquit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,21 +18,30 @@ public class StartPage extends AppCompatActivity {
         btncalender = (Button)findViewById(R.id.btn_startpg_calendar);
         btntrack = (Button)findViewById(R.id.btn_startpg_track);
         btnlists = (Button)findViewById(R.id.btn_startpg_lists);
+        btnquit = (Button)findViewById(R.id.btn_startpg_quit);
 
-
+        // Calander Functionality:
         btncalender.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent startCalendar = new Intent(getApplicationContext(), CalendarActivity.class);
-                startActivity(startCalendar);
+                Intent startCalendarButton = new Intent(getApplicationContext(), Calendar.class);
+                startActivity(startCalendarButton);
             }
         });
+
+        // Lists Functionality:
         btnlists.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent startCalendar = new Intent(getApplicationContext(), ListActivity.class);
-                startActivity(startCalendar);
+                Intent startListButton = new Intent(getApplicationContext(), Lists.class);
+                startActivity(startListButton);
             }
         });
 
-
+        // Quit Functionality:
+        btnquit.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                Intent startQuitButton = new Intent(getApplicationContext(), Quit.class);
+                startActivity(startQuitButton);
+            }
+        });
     }
-}
+};

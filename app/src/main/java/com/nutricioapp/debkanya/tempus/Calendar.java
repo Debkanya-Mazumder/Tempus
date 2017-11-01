@@ -9,9 +9,9 @@ import android.widget.CalendarView;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class CalendarActivity extends AppCompatActivity {
+public class Calendar extends AppCompatActivity {
 
-    private static final String TAG = "CalendarActivity";
+    private static final String TAG = "Calendar";
 
     private CalendarView mCalendarView;
     @Override

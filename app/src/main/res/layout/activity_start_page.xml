@@ -26,8 +26,15 @@
         <Button
             android:id="@+id/btn_startpg_lists"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="LISTS"/>
+            android:layout_height="wrap_content"
+            android:text="LISTS" />
+
+        <Button
+            android:id="@+id/btn_startpg_quit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="QUIT"
+            android:onClick="ClickToExit"/>
 
 
 
